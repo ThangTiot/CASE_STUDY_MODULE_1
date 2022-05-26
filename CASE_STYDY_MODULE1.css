@@ -1,0 +1,21 @@
+#all {
+    width: 1250px;
+    /*border: 1px solid black;*/
+}
+#divHead {
+    text-align: center;
+    background-color: rgba(21, 173, 234, 0.2);
+    padding: 10px;
+}
+
+th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+#addInfoTable{
+    position: fixed;
+    top: 220px;
+    right: 150px
+}
