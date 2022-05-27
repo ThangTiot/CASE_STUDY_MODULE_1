@@ -135,38 +135,38 @@ function clearForm() {
     document.getElementById("sl").value = ""
 }
 
+let headTable = document.getElementById("headTable")
 function searchProduct() {
     let filter = document.getElementById("searchInfo").value.toUpperCase()
     let table = document.getElementById("listProduct")
     let count = 0
     let tr = table.getElementsByTagName("tr")
-    table.style.display = "none"
-    for (let i=0 ; i<arr.length; i++){
+    let tbody = document.getElementById("listBody")
+    headTable.style.display = ""
+    creatTable()
+    tr[0].style.display = ""
+    // for (let i=0 ; i<arr.length; i++){
+    //     tr[i].style.display = ""
+    // }
+    for (let i = 0; i < arr.length; i++) {
         let name = arr[i].getName().toUpperCase()
         console.log(name)
-        if (name.indexOf(filter) !== -1){
+        if (name.indexOf(filter) !== -1) {
             count++
-            table.style.display = "table"
+            // table.style.display = "table"
         } else {
-            tr[i+1].style.display = "none"
+            tr[i + 2].style.display = "none"
         }
-        }
-    if (count === 0){
-        table.style.display = "table"
-        table.innerHTML = "Không có sản phẩm mà bạn muốn tìm."
     }
+    if (count === 0) {
+        headTable.style.display = "none"
+        tbody.innerHTML = "Không có sản phẩm mà bạn muốn tìm."
+        // table.innerHTML = "Không có sản phẩm mà bạn muốn tìm."
     }
-    // let tr = table.getElementsByTagName("tr")
-    // for (let i=0;i<tr.length;i++) {
-    //     let td = tr[i].getElementsByTagName("td")
-    //     console.log(td)
-    //     let td2 = td[2].innerHTML.toUpperCase()
-    //     if (td2.indexOf(filter) !== -1){
-    //         tr[0].style.display = ""
-    //         tr[i].style.display = ""
-    //     } else {
-    //         table.style.display = ""
-    //         document.getElementById("listProduct").innerHTML = "Không có sản phẩm mà bạn muốn tìm"
-    //     }
-    // }
-// }
+}
+
+function comeBack(){
+    headTable.style.display = ""
+    creatTable()
+    document.getElementById("searchInfo").value = ""
+}
