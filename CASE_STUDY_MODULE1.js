@@ -170,3 +170,14 @@ function comeBack(){
     creatTable()
     document.getElementById("searchInfo").value = ""
 }
+
+function logIn(){
+    let user = document.getElementById("user").value
+    let passWord = document.getElementById("password").value
+    if (user === "admin" && passWord === "12345"){
+        document.getElementById("divLogIn").style.display = "none"
+        document.getElementById("all").style.display = "block"
+    } else {
+        document.getElementById("announce").innerHTML = "User or password is wrong!"
+    }
+}

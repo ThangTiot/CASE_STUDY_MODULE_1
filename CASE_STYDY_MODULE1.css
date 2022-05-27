@@ -2,17 +2,39 @@
     width: 1250px;
     /*border: 1px solid black;*/
 }
+
 #divHead {
     text-align: center;
-    background-color: rgba(21, 173, 234, 0.2);
     padding: 10px;
+    background: linear-gradient(deepskyblue, #94f30b);
+    border: 2px solid black;
+    border-radius: 20px;
 }
-th,td {
+
+#divLogIn {
+    /*background-color: #6acaff;*/
+    padding: 20px;
+    position: fixed;
+    top: 200px;
+    right: 50%;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: linear-gradient(#6acaff, #ffd500);
+}
+
+#user, #password{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 3px;
+}
+
+th, td {
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
 }
-#addInfoTable{
+
+#addInfoTable {
     position: fixed;
     top: 220px;
     right: 150px
