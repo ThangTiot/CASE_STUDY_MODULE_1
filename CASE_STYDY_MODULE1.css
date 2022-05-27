@@ -2,6 +2,7 @@
     width: 1250px;
 }
 
+/*MÀU CỦA POSTER*/
 #divHead {
     text-align: center;
     padding: 10px;
@@ -12,6 +13,7 @@
     font-size: 20px;
 }
 
+/*MÀU CỦA FORM ĐĂNG NHẬP*/
 #divLogIn {
     /*background-color: #6acaff;*/
     padding: 20px;
@@ -23,24 +25,27 @@
     background: linear-gradient(#6acaff, #ffd500);
 }
 
+/*CĂN CHỈNH CÁC Ô TRONG FORM ĐĂNG NHẬP*/
 #user, #password{
     margin-bottom: 20px;
     margin-top: 5px;
     padding: 3px;
 }
 
+/*BODER FORM TÌM KIẾM*/
 #searchTable td{
     border: none;
-    text-align: center;
     background-color: aqua;
 }
 
+/*THÊM BODER CHO 2 BẢNG DANH SÁCH VÀ THÊM/SỬA*/
 table, th, td{
     border: 1px solid black;
     text-align: center;
     background-color: white;
 }
 
+/*MÀU VÀ VỊ TRÍ CỦA BẢNG THÊM/SỬA*/
 #addInfoTable {
     position: fixed;
     top: 265px;
@@ -48,19 +53,23 @@ table, th, td{
     background-color: #d7f6f6;
 }
 
+/*KÍCH THƯỚC FORM TÌM KIẾM*/
 #searchInfo{
     width: 500px;
     height: 20px;
 }
 
+/*MÀU DÒNG HEADER CỦA BẢNG DANH SÁCH SẢN PHẨM*/
 #headTable{
     color: black;
 }
 
+/*CĂN TRÁI BẢNG SẢN PHẨM VÀ FORM SEARCH*/
 #listProduct, #searchTable{
     margin-left: 20px;
 }
 
+/*KÍCH THƯỚC CỦA CÁC BUTTON*/
 button{
     padding: 3px;
     margin: 2px;

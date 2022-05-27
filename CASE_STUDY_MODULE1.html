@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="CASE_STYDY_MODULE1.css">
 </head>
 <body>
+<!--TẠO FORM ĐĂNG NHẬP-->
 <div id="divLogIn">
     <label>User<br>
         <input type="text" id="user"><br>
@@ -16,12 +17,16 @@
     <p id="announce" style="color: red"></p>
     <button onclick="logIn()">Log In</button>
 </div>
+
+<!--TẠO TRANG WEB QUẢN LÝ KHO HÀNG-->
 <div id="all" style="display: none">
+<!--    TẠO POSTER-->
     <div id="divHead" onclick="comeBack()">
         <h1>BÁCH HÓA VÔ DỤNG</h1>
         <h2>""</h2>
     </div>
     <br>
+<!--    TẠO FORM TÌM KIẾM-->
     <table id="searchTable">
         <tr>
             <td><label><input type="text" id="searchInfo" placeholder="Nhập tên sản  phẩm muốn tìm..."></label>
@@ -32,6 +37,7 @@
         </tr>
     </table>
     <br>
+<!--    TẠO BẢNG DANH SÁCH KHO HÀNG-->
     <table id="listProduct">
         <thead id="headTable">
         <tr>
@@ -48,6 +54,7 @@
         </thead>
         <tbody id="listBody"></tbody>
     </table>
+<!--    TẠO FORM THÊM/SỬA THÔNG TIN SẢN PHẨM-->
     <table id="addInfoTable">
         <tr>
             <th colspan="2" height="25" style="background-color: #0a5bf1; color: #ffffff">THÔNG TIN SẢN PHẨM</th>
