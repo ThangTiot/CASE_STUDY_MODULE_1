@@ -56,6 +56,7 @@ class Product {
 
 let arr = []
 intro()
+zui()
 
 function intro() {
     arr[0] = new Product("https://www.cornellstore.com/site/Product_images/10015961_media-Silver-02.jpg", "M1", "MacBook Pro 13", "20.000.000", 5)
@@ -77,9 +78,9 @@ function add() {
 function creatTable() {
     let txt = ""
     for (let i = 0; i < arr.length; i++) {
-        txt += "<tr><td><img src='" + arr[i].getImg() + "' width='100' height='60'></td><td>" + arr[i].getId() +
+        txt += "<tr><td><img src='" + arr[i].getImg() + "' width='90' height='60'></td><td>" + arr[i].getId() +
             "</td><td>" + arr[i].getName() + "</td><td>" + arr[i].getPrice() + " VND</td><td>" + arr[i].getSL() +
-            "</td><td><button onclick='editProduct(" + i + ")'>Edit</button><button onclick='deleteProduct(" + i + ")'>Delete</button></td></tr>"
+            "</td><td><button onclick='editProduct(" + i + ")'>Edit</button><br><button onclick='deleteProduct(" + i + ")'>Delete</button></td></tr>"
     }
     document.getElementById("listBody").innerHTML = txt
     clearForm()
@@ -117,6 +118,7 @@ function upDate(i) {
     arr[i].setSL(sl)
     creatTable()
     document.getElementById("upDate").style.display = "none"
+    document.getElementById("cancer").style.display = "none"
     document.getElementById("add").style.display = ""
 }
 
@@ -145,9 +147,6 @@ function searchProduct() {
     headTable.style.display = ""
     creatTable()
     tr[0].style.display = ""
-    // for (let i=0 ; i<arr.length; i++){
-    //     tr[i].style.display = ""
-    // }
     for (let i = 0; i < arr.length; i++) {
         let name = arr[i].getName().toUpperCase()
         console.log(name)
@@ -161,7 +160,6 @@ function searchProduct() {
     if (count === 0) {
         headTable.style.display = "none"
         tbody.innerHTML = "Không có sản phẩm mà bạn muốn tìm."
-        // table.innerHTML = "Không có sản phẩm mà bạn muốn tìm."
     }
 }
 
@@ -180,4 +178,12 @@ function logIn(){
     } else {
         document.getElementById("announce").innerHTML = "User or password is wrong!"
     }
+}
+
+function zui(){
+    let red = Math.random()*255;
+    let blue = Math.random()*255;
+    let green = Math.random()*255;
+    document.getElementById("divHead").style.color = "rgb(" + red + "," + blue + "," + green + ")"
+    setTimeout(zui,500)
 }

@@ -1,14 +1,15 @@
 #all {
     width: 1250px;
-    /*border: 1px solid black;*/
 }
 
 #divHead {
     text-align: center;
     padding: 10px;
-    background: linear-gradient(deepskyblue, #94f30b);
+    background: linear-gradient(deepskyblue, #22f30b);
     border: 2px solid black;
     border-radius: 20px;
+    font-style: italic;
+    font-size: 20px;
 }
 
 #divLogIn {
@@ -28,14 +29,45 @@
     padding: 3px;
 }
 
-th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+#searchTable td{
+    border: none;
     text-align: center;
+    background-color: aqua;
+}
+
+table, th, td{
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
 }
 
 #addInfoTable {
     position: fixed;
-    top: 220px;
-    right: 150px
+    top: 265px;
+    right: 150px;
+    background-color: #d7f6f6;
+}
+
+#searchInfo{
+    width: 500px;
+    height: 20px;
+}
+
+#headTable{
+    color: black;
+}
+
+#listProduct, #searchTable{
+    margin-left: 20px;
+}
+
+button{
+    padding: 3px;
+    margin: 2px;
+    width: 60px;
+}
+
+button:hover{
+    background: red;
+    color: white;
 }
