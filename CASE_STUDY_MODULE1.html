@@ -17,7 +17,7 @@
             <td><label><input type="text" id="searchInfo" placeholder="Nhập sản  phẩm muốn tìm..." style="width: 500px"></label>
             </td>
             <td>
-                <button>Tìm kiếm</button>
+                <button onclick="searchProduct()">Tìm kiếm</button>
             </td>
         </tr>
     </table>
@@ -53,7 +53,7 @@
         </tr>
         <tr>
             <th>Giá</th>
-            <th><label><input type="number" id="price"></label></th>
+            <th><label><input type="text" id="price"></label></th>
         </tr>
         <tr>
             <th width="80px">Số lượng</th>
@@ -63,6 +63,7 @@
             <th colspan="2">
                 <button id="add" onclick="add()">Add</button>
                 <button id="upDate" style="display: none">Up Date</button>
+                <button id="cancer" style="display: none" onclick="cancer()">Cancer</button>
             </th>
         </tr>
     </table>
