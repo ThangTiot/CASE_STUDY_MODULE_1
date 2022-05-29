@@ -11,6 +11,7 @@
     border-radius: 20px;
     font-style: italic;
     font-size: 20px;
+    height: 150px;
 }
 
 /*MÀU CỦA FORM ĐĂNG NHẬP*/
@@ -19,7 +20,7 @@
     padding: 20px;
     position: fixed;
     top: 200px;
-    right: 50%;
+    right: 40%;
     border: 2px solid black;
     border-radius: 20px;
     background: linear-gradient(#6acaff, #ffd500);
@@ -48,7 +49,7 @@ table, th, td{
 /*MÀU VÀ VỊ TRÍ CỦA BẢNG THÊM/SỬA*/
 #addInfoTable {
     position: fixed;
-    top: 265px;
+    top: 255px;
     right: 150px;
     background-color: #d7f6f6;
 }
@@ -74,6 +75,8 @@ button{
     padding: 3px;
     margin: 2px;
     width: 60px;
+    background-color: #fff7d4;
+    border-radius: 5px;
 }
 
 button:hover{

@@ -87,8 +87,11 @@ function creatTable() {
 }
 
 function deleteProduct(i) {
-    arr.splice(i, 1);
-    creatTable()
+    let xn = confirm("Bạn có muốn xóa sản phẩm không?")
+    if (xn){
+        arr.splice(i, 1);
+        creatTable()
+    }
 }
 
 function editProduct(i) {
@@ -174,6 +177,7 @@ function logIn(){
     let passWord = document.getElementById("password").value
     if (user === "admin" && passWord === "12345"){
         document.getElementById("divLogIn").style.display = "none"
+        document.getElementById("imgBackground").style.display = "none"
         document.getElementById("all").style.display = "block"
     } else {
         document.getElementById("announce").innerHTML = "User or password is wrong!"
