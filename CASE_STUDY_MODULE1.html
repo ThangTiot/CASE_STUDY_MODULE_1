@@ -17,6 +17,17 @@
     </label>
     <p id="announce" style="color: red"></p>
     <button onclick="logIn()">Log In</button>
+    <p id="crAccount" onclick="displayCreatAccountForm()"><u>I don't have an account!</u></p>
+</div>
+<!--TẠO FORM ĐĂNG KÍ-->
+<div id="divCreatAccount" style="display: none">
+    <label>Creat User<br>
+        <input type="text" id="creatUser"><br>
+    </label>
+    <label>Creat Password<br>
+        <input type="password" id="creatPassword"><br>
+    </label>
+    <button onclick="creatAccount()" style="width: 110px">Creat Account</button>
 </div>
 
 <!--TẠO TRANG WEB QUẢN LÝ KHO HÀNG-->
@@ -25,6 +36,9 @@
     <div id="divHead" onclick="comeBack()">
         <h1>BÁCH HÓA VÔ DỤNG</h1>
         <h2>"Thứ Gì Bạn Cần Chúng Tôi Đều Không Có"</h2>
+    </div>
+    <div>
+        <button onclick="logOut()" id="logOut">Log Out</button>
     </div>
     <br>
 <!--    TẠO FORM TÌM KIẾM-->

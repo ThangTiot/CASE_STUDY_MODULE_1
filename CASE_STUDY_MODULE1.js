@@ -55,7 +55,6 @@ class Product {
 }
 
 let arr = []
-intro()
 zui()
 
 function intro() {
@@ -175,7 +174,14 @@ function comeBack(){
 function logIn(){
     let user = document.getElementById("user").value
     let passWord = document.getElementById("password").value
+    let user1 = localStorage.getItem("user")
+    let passWord1 = localStorage.getItem("password")
     if (user === "admin" && passWord === "12345"){
+        document.getElementById("divLogIn").style.display = "none"
+        document.getElementById("imgBackground").style.display = "none"
+        document.getElementById("all").style.display = "block"
+        intro()
+    } else if (user === user1 && passWord === passWord1) {
         document.getElementById("divLogIn").style.display = "none"
         document.getElementById("imgBackground").style.display = "none"
         document.getElementById("all").style.display = "block"
@@ -190,4 +196,24 @@ function zui(){
     let green = Math.random()*255;
     document.getElementById("divHead").style.color = "rgb(" + red + "," + blue + "," + green + ")"
     setTimeout(zui,500)
+}
+
+function displayCreatAccountForm(){
+    document.getElementById("divLogIn").style.display = "none"
+    document.getElementById("divCreatAccount").style.display = "block"
+}
+
+function creatAccount(){
+    localStorage.setItem("user",document.getElementById("creatUser").value);
+    localStorage.setItem("password",document.getElementById("creatPassword").value);
+    alert("Đăng kí tài khoản thành công!")
+    document.getElementById("divLogIn").style.display = "block"
+    document.getElementById("divCreatAccount").style.display = "none"
+}
+
+function logOut(){
+    // document.getElementById("divLogIn").style.display = "block"
+    // document.getElementById("all").style.display = "none"
+    // document.getElementById("imgBackground").style.display = ""
+    location.reload();
 }

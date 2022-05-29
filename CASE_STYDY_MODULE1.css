@@ -80,6 +80,45 @@ button{
 }
 
 button:hover{
-    background: red;
+    background: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+#crAccount:hover{
+    color: red;
+}
+
+/*MÀU CỦA FORM ĐĂNG KÍ*/
+#divCreatAccount {
+    /*background-color: #6acaff;*/
+    padding: 20px;
+    position: fixed;
+    top: 200px;
+    right: 40%;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: linear-gradient(#74ff6a, #ffea00);
+}
+
+/*CĂN CHỈNH CÁC Ô TRONG FORM ĐĂNG KÍ*/
+#creatUser, #creatPassword{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 3px;
+}
+
+/*MÀU VÀ VỊ TRÍ NÚT LOG OUT*/
+#logOut{
+    position: absolute;
+    top: 200px;
+    left: 1135px;
+    height: 30px;
+    width: 80px;
+    background-color: red;
     color: white;
+}
+#logOut:hover{
+    color: black;
+    background-color: #ffea00;
 }
