@@ -207,8 +207,9 @@ function creatAccount(){
     localStorage.setItem("user",document.getElementById("creatUser").value);
     localStorage.setItem("password",document.getElementById("creatPassword").value);
     alert("Đăng kí tài khoản thành công!")
-    document.getElementById("divLogIn").style.display = "block"
-    document.getElementById("divCreatAccount").style.display = "none"
+    // document.getElementById("divLogIn").style.display = "block"
+    // document.getElementById("divCreatAccount").style.display = "none"
+    location.reload();
 }
 
 function logOut(){
