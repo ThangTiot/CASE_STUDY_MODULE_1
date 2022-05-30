@@ -107,16 +107,22 @@ button:hover{
     margin-top: 5px;
     padding: 3px;
 }
-
+/*Vị trí div log out*/
+#divLogOut{
+    position: absolute;
+    top: 170px;
+    left: 1135px;
+}
 /*MÀU VÀ VỊ TRÍ NÚT LOG OUT*/
 #logOut{
     position: absolute;
-    top: 200px;
-    left: 1135px;
+    /*top: 200px;*/
+    /*left: 1135px;*/
     height: 30px;
     width: 80px;
     background-color: red;
     color: white;
+    top: 40px;
 }
 #logOut:hover{
     color: black;

@@ -180,11 +180,13 @@ function logIn(){
         document.getElementById("divLogIn").style.display = "none"
         document.getElementById("imgBackground").style.display = "none"
         document.getElementById("all").style.display = "block"
+        document.getElementById("userName").innerHTML = "Wellcome " + user + "!"
         intro()
     } else if (user === user1 && passWord === passWord1) {
         document.getElementById("divLogIn").style.display = "none"
         document.getElementById("imgBackground").style.display = "none"
         document.getElementById("all").style.display = "block"
+        document.getElementById("userName").innerHTML = "Wellcome " + user1 + "!"
     } else {
         document.getElementById("announce").innerHTML = "User or password is wrong!"
     }
