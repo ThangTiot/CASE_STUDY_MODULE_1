@@ -6,7 +6,7 @@
 #divHead {
     text-align: center;
     padding: 10px;
-    background: linear-gradient(deepskyblue, #22f30b);
+    background: linear-gradient(to right, #6acaff, #ffd500, yellow, #0bf3d8);
     border: 2px solid black;
     border-radius: 20px;
     font-style: italic;
@@ -36,7 +36,7 @@
 /*BODER FORM TÌM KIẾM*/
 #searchTable td{
     border: none;
-    background-color: aqua;
+    background-color: #d2f5eb;
 }
 
 /*THÊM BODER CHO 2 BẢNG DANH SÁCH VÀ THÊM/SỬA*/

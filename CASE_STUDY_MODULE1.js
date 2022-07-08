@@ -154,7 +154,6 @@ function searchProduct() {
         console.log(name)
         if (name.indexOf(filter) !== -1) {
             count++
-            // table.style.display = "table"
         } else {
             tr[i + 2].style.display = "none"
         }
@@ -209,14 +208,9 @@ function creatAccount(){
     localStorage.setItem("user",document.getElementById("creatUser").value);
     localStorage.setItem("password",document.getElementById("creatPassword").value);
     alert("Đăng kí tài khoản thành công!")
-    // document.getElementById("divLogIn").style.display = "block"
-    // document.getElementById("divCreatAccount").style.display = "none"
     location.reload();
 }
 
 function logOut(){
-    // document.getElementById("divLogIn").style.display = "block"
-    // document.getElementById("all").style.display = "none"
-    // document.getElementById("imgBackground").style.display = ""
     location.reload();
 }
